@@ -1,0 +1,785 @@
+:root{
+    
+    --section-color-blue: #3368c4;
+    --section-color-white: #fff;
+    --colors-paragraph: #696969;
+    --colors-clear--paragraph: #FFFAFA;
+
+    --background-botton-form: #4d70d1;
+    --color-botton-form: #000;
+    --form-error: #DC143C;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    border-radius: 25px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+   
+}
+
+header {
+    margin-top: 0;
+    margin-bottom: 14px;
+    background-color: var(--section-color-blue);
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .logo img {
+    width: 80px;
+    height: auto;
+    margin-top: 12px;
+}
+
+.menu .menu-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .menu-main ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu .menu-main ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--colors-clear--paragraph);
+}
+
+.menu #hamburguer {
+    display: none;
+}
+
+#welcome {
+    margin: 30px 0;
+}
+
+#welcome .welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-section .img-section {
+    width: 500px;
+}
+
+.welcome-section .img-section img {
+    width: 450px;
+}
+
+.welcome-section .text-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.welcome-section .text-section h1, p{
+    margin-bottom: 28px;
+}
+
+.welcome-section .text-section .btn {
+    background-color: var(--background-botton-form);
+}
+.welcome-section .text-section .btn a {
+    color: var(--section-color-white);
+    text-decoration: none;
+}
+
+#About {
+    background-color: var(--section-color-blue);
+    color: var(--colors-clear--paragraph);
+}
+
+#About h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding-top: 14px;
+}
+
+#About h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-sobre {
+    display: flex;
+}
+
+.section-sobre .desc-side {
+    flex: 1;
+}
+
+.section-sobre .desc-side p {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.section-sobre .desc-side .btn-about {
+    background-color: var(--section-color-white);
+}
+
+.section-sobre .desc-side .btn-about a {
+    color: var(--color-botton-form);
+}
+
+.section-sobre .img-side {
+    width: 500px;
+    text-align: center;
+}
+
+.section-sobre .img-side img {
+    width: 450px;
+    padding-bottom: 18px;
+}
+
+
+#Serviços {
+    background-color: var(--section-color-white);
+}
+
+.section-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-service h2 {
+    font-size: 1.7rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.section-service .servico-list--side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+}
+
+.section-service .servico-list--side .servico-list--side-itens {
+    display: flex;
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+
+.section-service .servico-list--side .servico-list--side-itens .list-side--column {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-service .servico-list--side .servico-list--side-itens .list-side--column h3 {
+    margin-bottom: 14px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.section-service .servico-list--side .servico-list--side-itens .list-side--column p {
+    font-size: 0.92rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--colors-paragraph);
+    padding: 0 16px 16px 16px;
+}
+
+
+#Vantagens {
+    background-color: var(--section-color-blue);
+    color: var(--colors-clear--paragraph);
+}
+
+#Vantagens h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-top: 40px;
+}
+
+.section-vantagem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.section-vantagem .section-vantagem--item {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding-bottom: 30px;
+}
+
+.section-vantagem .section-vantagem--item h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border: 1px solid var(--section-color-white);
+    border-radius: 50px;
+    padding: 7px 0;
+}
+
+.section-vantagem .section-vantagem--item p {
+    font-size: 0.9rem;
+    line-height: 22px;
+    padding: 0 14px;
+}
+
+#Contact {
+    background-color: var(--section-color-white);
+    color: var(--colors-paragraph);
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.section-form .section-form--desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-form .section-form--desc .section-form--desc-info {
+    width: 45%;
+    margin-right: 20px;
+}
+
+.section-form .section-form--desc .section-form--desc-info h2 {
+    margin-bottom: 19px;
+}
+
+.section-form .section-form--desc .section-form--desc-info p {
+    font-size: 1rem;
+    line-height: 24px;
+    flex: 1;
+}
+
+.section-form .section-form--formulario {
+    width: 100%;
+}
+
+.section-form .section-form--formulario #formulario {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 22px;
+}
+
+.section-form .section-form--formulario #formulario .input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-form .section-form--formulario #formulario .input-form.error .form-control{
+    border: 2px solid var(--form-error);
+    background-color: var(--section-color-white);
+}
+
+.section-form .section-form--formulario #formulario .input-form.sucesso .form-control{
+    border: 2px solid var(--color-botton-form);
+    background-color: var(--section-color-white);
+}
+
+.section-form .section-form--formulario #formulario .input-form.error span {
+    display: block;
+    color: var(--form-error);
+    margin-top: 0.6rem;
+    font-size: 0.97rem;
+}
+
+.section-form .section-form--formulario #formulario .input-form label {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.section-form .section-form--formulario #formulario .input-form .form-control {
+    display: block;
+    height: 2rem;
+    width: 100%;
+    padding: 12px;
+    outline: none;
+}
+
+.section-form .section-form--formulario #formulario .input-form span {
+    display: none;
+}
+
+
+
+.section-form .section-form--formulario #formulario .input-form  textarea {
+    padding: 3px 0 0 7px;
+}
+
+.section-form .section-form--formulario #formulario .btn-form {
+    text-align: center;
+}
+
+.section-form .section-form--formulario #formulario .btn-form .btn {
+    width: 30%;
+    padding: 20px 0;
+    border-radius: 50px;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: var(--background-botton-form);
+    color: var(--section-color-white);
+}
+
+footer {
+    background-color: var(--section-color-blue);
+    height: auto;
+}
+
+.conteiner-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteiner-footer .links-social--media {
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.conteiner-footer .links-social--media .text {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.conteiner-footer .links-social--media .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.conteiner-footer .links-social--media .social-media img {
+    width: 40px;
+}
+
+.conteiner-footer .links-sections {
+    width: 40%;
+}
+
+.conteiner-footer .links-sections .nav-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.conteiner-footer .links-sections .nav-footer ul {
+    list-style: none;
+}
+
+.conteiner-footer .links-sections .nav-footer .nav-footer--one ul li, .conteiner-footer .links-sections .nav-footer .nav-footer--two ul li{
+    margin-bottom: 12px;
+}
+
+.conteiner-footer .links-sections .nav-footer .nav-footer--one ul li a, .conteiner-footer .links-sections .nav-footer .nav-footer--two ul li a{
+    color: var(--section-color-white);
+}
+
+.conteiner-footer .contato {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 7px;
+}
+
+.conteiner-footer .contato .contato-text {
+    padding: 12px;
+}
+
+.conteiner-footer .contato .contato-text .btn-footer {
+    background-color: var(--section-color-white);
+    margin-bottom: 10px;
+}
+
+.conteiner-footer .contato .contato-text .btn-footer a {
+    color: var(--color-botton-form);
+    font-weight: bold;
+}
+
+.conteiner-footer .contato .contato-text p {
+    font-size: 1rem;
+    line-height: 23px;
+    font-weight: bold;
+    color: var(--section-color-white);
+}
+
+
+@media screen and (max-width:1129px) {
+    .section-vantagem {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1098px) {
+    .section-form .section-form--desc .section-form--desc-info p {
+        font-size: 0.93rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .section-sobre .desc-side p {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .welcome-section .text-section {
+        margin-left: 25px;
+    }
+
+    .conteiner-footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .conteiner-footer .contato {
+        width: 70%;
+    }
+
+    .conteiner-footer .contato .contato-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .conteiner-footer .contato .contato-text p {
+        margin-top: 17px;
+    } 
+
+    .conteiner-footer .links-social--media .social-media img {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width:840px) {
+    .menu .menu-main ul {
+        display: none;
+    }
+
+    .menu #hamburguer  {
+        display: flex;
+        cursor: pointer;
+
+    }
+
+    .menu #hamburguer .icon-close {
+        display: none;
+    }
+
+    .menu #hamburguer .icon-open {
+        display: block;
+    }
+
+    .menu #hamburguer.show .icon-close {
+        display: block;
+    }
+
+    .menu #hamburguer.show .icon-open {
+        display: none;
+    }
+
+    .conteiner .menu .menu-main.show {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, .8);
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        right: 0;
+        height: 60vh;
+        width: 30%;
+    } 
+
+    .conteiner .menu .menu-main.show ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .welcome-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-section .img-section {
+        margin-bottom: 20px;
+        width: 430px;
+    }
+
+    .section-sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-sobre .desc-side p {
+        margin: 0 30px 30px 30px;
+    }
+
+    .section-service .servico-list--side .servico-list--side-itens .list-side--column p {
+        font-size: 0.87rem;
+        padding: 0;
+    }
+
+    .section-service .servico-list--side .servico-list--side-itens {
+        width: 44%;
+    }
+
+    .section-vantagem .section-vantagem--item {
+        width: 45%;
+    }
+
+    .section-vantagem .section-vantagem--item h3 {
+        font-size: 0.97rem;
+    }
+
+    .section-vantagem .section-vantagem--item p {
+        font-size: 0.88rem;
+    }
+
+    .section-form .section-form--desc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-form .section-form--desc .section-form--desc-info {
+        width: 82%;
+        margin-right: 0;
+    }
+
+    .section-form .section-form--desc .section-form--desc-info h2 {
+        text-align: center;
+    }
+
+    .section-form .section-form--desc .section-form--desc-info p {
+        font-size: 0.93rem;
+        text-align: left;
+        margin-bottom: 23px;
+    }
+
+    .section-form .section-form--desc iframe {
+        width: 87%;
+    }
+
+    .section-form .section-form--formulario {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conteiner .menu .menu-main.show {
+        height: 48vh;
+    }
+
+    .conteiner-footer .contato .contato-text p {
+        font-size: 0.9rem;
+    }
+
+    .conteiner-footer .links-sections {
+        width: 50%;
+    }
+
+    .conteiner-footer .links-sections .nav-footer {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .conteiner .menu .menu-main.show {
+        width: 40%;
+    }
+
+    .welcome-section .text-section h1 {
+        font-size: 1.3rem;
+    }
+
+    .welcome-section .text-section p {
+        font-size: 0.95rem;
+    }
+
+    .welcome-section .img-section img {
+        width: 100%;
+    }
+
+    .section-form .section-form--formulario #formulario .btn-form .btn {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .conteiner-footer .links-sections {
+        width: 65%;
+    }
+
+    .conteiner-footer .links-sections .nav-footer .nav-footer--one ul li, .conteiner-footer .links-sections .nav-footer .nav-footer--two ul li {
+        font-size: 0.96rem;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .welcome-section .text-section {
+        text-align: center;
+    }
+
+    .section-service .servico-list--side {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-service .servico-list--side .servico-list--side-itens {
+        width: 90vw;
+    }
+
+    #Vantagens {
+        padding-top: 20px;
+    }
+    #Vantagens h2 {
+        font-size: 1.2rem;
+    }
+
+    .section-vantagem {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-vantagem .section-vantagem--item {
+        width: 90%;
+    }
+
+    .section-service .servico-list--side .servico-list--side-itens {
+        width: 100%;
+    }
+
+    .section-service .servico-list--side .servico-list--side-itens p {
+        font-size: 0.9rem;
+    }
+
+    .section-form .section-form--desc iframe {
+        width: 94vw;
+    }
+}
+
+@media (max-width: 500px) {  
+    .conteiner .menu .menu-main.show {
+        width: 45%;
+    }  
+    .welcome-section .img-section {
+        width: 300px;
+    }
+    
+    .section-sobre .desc-side p {
+        font-size: 0.86rem;
+        margin: 0 0 30px 0;
+    }
+
+     .section-sobre .img-side {
+        width: 100%;
+    }
+
+    .section-sobre .img-side img {
+        width: 70%;
+    }
+
+    .section-form .section-form--desc .section-form--desc-info {
+        width: 97%;
+    }
+
+    .section-form .section-form--desc .section-form--desc-info p {
+        font-size: 0.85rem;
+        
+    }
+}
+
+@media (max-width:430px) {
+   #Vantagens h2 {
+       font-size: 0.9rem;
+       padding: 0 30px;
+   }
+
+   .section-vantagem .section-vantagem--item {
+       width: 100%;
+   }
+
+   .section-form .section-form--formulario #formulario .btn-form .btn {
+        width: 80%;
+   }
+
+   .conteiner-footer .links-sections .nav-footer .nav-footer--one ul li, .conteiner-footer .links-sections .nav-footer .nav-footer--two ul li {
+        padding: 0 20px;
+   }
+}
+
+@media screen and (max-width: 414px) {
+    .conteiner-footer .contato {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .conteiner-footer .contato .contato-text p {
+        margin-top: 12px;
+    }
+
+    .conteiner-footer .links-sections {
+        width: 100%;
+    }
+}
