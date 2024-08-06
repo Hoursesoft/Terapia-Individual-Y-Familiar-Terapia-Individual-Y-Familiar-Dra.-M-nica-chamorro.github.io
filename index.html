@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!--ICONO DE LA PSICOLOGIA -->
     <link rel="icon" href="https://th.bing.com/th/id/R.9e3cc4a2092fe2919d6730f100647464?rik=hBpzjUZDqaCrMw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-psychology-open-2000.png&ehk=JVMn2yrbp33ca7A49ZbxZ5d0siD%2bRzxXk0gPyuzT4cE%3d&risl=&pid=ImgRaw&r=0">
     <title>Terapia Individual Y Familiar / Dra. Mónica chamorro</title>
 </head>
@@ -83,17 +84,25 @@
                             </div>
                         </div>
                         
-                        
                         <div class="servico-list--side-itens">
                             <div class="list-side--column">
-                                <img src="imagens/at-individual.jpeg" alt="Ilustração de atendimento Individual">
+                                <img src="imagens/individual 1.jpg" alt="Ilustração de atendimento Individual" class="thumbnail" onclick="openGallery('imagens/at-individual.jpeg', 'Terapia individuales', 'Servicio de psicoterapia individual en modalidad presencial o virtual...')">
+                                <img src="imagens/individual 2.jpg" alt="Ilustração de atendimento Individual" class="thumbnail" onclick="openGallery('imagens/at-individual.jpeg', 'Terapia individuales', 'Servicio de psicoterapia individual en modalidad presencial o virtual...')">
+                                
                                 <h3>Terapia individuales</h3>
                                 <p>Servicio de psicoterapia individual en modalidad presencial o virtual, para ajustarnos a tu necesidad; con énfasis en la atención de trastornos depresivos, ansiedad, trastornos adaptativos, elaboración de duelo, fortalecimiento del nivel de autoestima, herramientas para la vida social, familiar y laboral, etc. Un espacio donde encontrarás el apoyo emocional y las herramientas para superar situaciones, fortalecer tus herramientas de afrontamiento y armonizar cada área de tu vida, sanando y replanteando, de acuerdo a tus objetivos y tú situación individual.
                                 </p>
                             </div>
                         </div>
+                        
+                        <!-- Lightbox -->
+                        <div id="lightbox" class="lightbox" onclick="closeGallery()">
+                            <span class="close">&times;</span>
+                            <img class="lightbox-content" id="lightbox-image">
+                            <div id="caption"></div>
+                        </div>
 
-                     
+
 
 
                         <div class="servico-list--side-itens">
@@ -194,7 +203,7 @@
                             <ul>
                                 <li><a href="#About">Sobre Nosotros</a></li>
                                 
-                                <li><a href="#Vantagens">Beneficio/s></li>
+                                <li><a href="#Vantagens">Beneficio/s </li>
                                  
                             </ul>
                         </div>
@@ -216,6 +225,15 @@
                 </div>
             </div>
         </div>
+        
+
+
+ 
+
+
+
+
+
     </footer>
     <script src="script.js"></script>
 </body>

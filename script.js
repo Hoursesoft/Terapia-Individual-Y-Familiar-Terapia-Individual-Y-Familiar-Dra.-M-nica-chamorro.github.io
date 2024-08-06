@@ -122,3 +122,22 @@ const formSucesso = (input) => {
     
     msg.innerText = "";
 };
+
+
+
+/*GALERIA */
+function openGallery() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+
+    // Obtener la URL de la imagen en miniatura que fue clickeada
+    lightboxImage.src = event.target.src;
+
+    // Mostrar el lightbox
+    lightbox.style.display = 'flex';
+}
+
+function closeGallery() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+}
