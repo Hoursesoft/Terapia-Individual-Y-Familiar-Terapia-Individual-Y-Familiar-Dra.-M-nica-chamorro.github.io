@@ -141,3 +141,4 @@ function closeGallery() {
     const lightbox = document.getElementById('lightbox');
     lightbox.style.display = 'none';
 }
+//
