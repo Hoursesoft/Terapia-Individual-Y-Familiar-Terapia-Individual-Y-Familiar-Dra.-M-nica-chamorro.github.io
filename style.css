@@ -848,3 +848,21 @@ body {
     height: 150px;
     text-align: center;
 }
+
+/*Seccion comentarios */
+#Comments {
+    text-align: center;
+    background-color: var(--section-color-white);
+    color: var(--colors-paragraph);
+}
+
+#instructions {
+    border-radius: 10px;
+    text-align: justify;
+    background-color: var(--section-color-white);
+    color: var(--colors-paragraph);
+}
+
+.h2_Instructions{
+  text-align: center;  
+}
