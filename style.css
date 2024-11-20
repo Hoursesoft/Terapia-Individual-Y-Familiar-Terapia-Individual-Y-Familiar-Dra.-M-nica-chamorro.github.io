@@ -851,13 +851,17 @@ body {
 
 /*Seccion comentarios */
 #Comments {
+    
+ 
     text-align: center;
     background-color: var(--section-color-white);
     color: var(--colors-paragraph);
 }
 
 #instructions {
-    border-radius: 10px;
+    margin-top: 20px; /*Posicion del recuadro*/
+    padding: 30px;
+   border-radius: 10px;
     text-align: justify;
     background-color: var(--section-color-white);
     color: var(--colors-paragraph);
