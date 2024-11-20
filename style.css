@@ -9,7 +9,13 @@
     --color-botton-form: #000;
     --form-error: #DC143C;
 }
-
+.company-name {
+    font-family: 'Montserrat';
+    color: #fdfdfd; /* Cambia el color según tu diseño */
+    text-align: center;
+    font-size: 2rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+  
+}
 
 * {
     margin: 0;
@@ -38,6 +44,7 @@ body {
     font-size: 16px;
    
 }
+
 
 header {
     margin-top: 0;
