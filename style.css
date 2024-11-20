@@ -10,9 +10,9 @@
     --form-error: #DC143C;
 }
 .company-name {
-    font-family: 'sans-serif';
+    font-family: 'Helvetica';
     color: #fdfdfd; /* Cambia el color según tu diseño */
-    text-align: flex;
+    text-align: center;
     font-size: 1.5rem; /* Ajusta el tamaño de la fuente según tus necesidades */
   
 }
