@@ -87,22 +87,24 @@ export const BENEFITS: Benefit[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    platform: 'Facebook',
+    platform: 'facebook',
     url: 'https://www.facebook.com/psicologia.accion.5?mibextid=ZbWKwL',
-    icon: 'https://cdn.icon-icons.com/icons2/2429/PNG/512/facebook_logo_icon_147291.png',
-    alt: 'Facebook',
+    label: 'Facebook',
   },
   {
-    platform: 'Instagram',
+    platform: 'instagram',
     url: 'https://www.instagram.com/terapia_individual_?igsh=MTFrcHp2ZnZkeWl6eQ==',
-    icon: 'https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon-2.png',
-    alt: 'Instagram',
+    label: 'Instagram',
   },
   {
-    platform: 'TikTok',
+    platform: 'tiktok',
     url: 'https://www.tiktok.com/@relief.emocional?_t=8oa6Q0GHURC&_r=1',
-    icon: 'https://www.pnguniverse.com/wp-content/uploads/2020/10/Tik-Tok-con-fondo-1280x1229.png',
-    alt: 'TikTok',
+    label: 'TikTok',
+  },
+  {
+    platform: 'whatsapp',
+    url: WHATSAPP_URL,
+    label: 'WhatsApp',
   },
 ];
 

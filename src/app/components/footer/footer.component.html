@@ -7,11 +7,12 @@
           @for (link of socialLinks; track link.platform) {
             <a
               [href]="link.url"
-              [attr.aria-label]="link.platform"
+              [attr.aria-label]="link.label"
+              title="{{ link.label }}"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img [src]="link.icon" [alt]="link.alt" />
+              <app-social-icon [platform]="link.platform" />
             </a>
           }
         </div>
