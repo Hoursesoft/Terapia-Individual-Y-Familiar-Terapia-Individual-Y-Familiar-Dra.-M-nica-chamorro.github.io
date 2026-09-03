@@ -14,11 +14,12 @@ export interface Benefit {
   description: string;
 }
 
+export type SocialPlatform = 'facebook' | 'instagram' | 'tiktok' | 'whatsapp';
+
 export interface SocialLink {
-  platform: string;
+  platform: SocialPlatform;
   url: string;
-  icon: string;
-  alt: string;
+  label: string;
 }
 
 export interface NavItem {

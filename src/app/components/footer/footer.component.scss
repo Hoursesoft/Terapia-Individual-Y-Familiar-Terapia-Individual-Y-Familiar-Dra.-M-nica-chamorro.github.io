@@ -4,7 +4,7 @@
 
 footer {
   background-color: var(--section-color-blue);
-  height: auto;
+  color: #fff;
 }
 
 .container {
@@ -17,137 +17,187 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 40px 0;
 }
 
+/* ===== Social media ===== */
 .social-media-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 20px;
+  flex: 0 1 40%;
 
   .text {
     font-size: 1.2rem;
-    color: #fff;
-  }
+    line-height: 1.5;
+    font-weight: 500;
 
-  .social-media {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    align-items: center;
-    margin-top: 20px;
-
-    img {
-      width: 40px;
+    span {
+      font-weight: 400;
     }
   }
 }
 
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      background-color: #fff;
+      color: var(--section-color-blue);
+      transform: translateY(-2px);
+    }
+
+    &:focus-visible {
+      outline: 3px solid rgba(255, 255, 255, 0.6);
+      outline-offset: 2px;
+    }
+
+    app-social-icon {
+      display: inline-flex;
+      width: 20px;
+      height: 20px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        display: block;
+      }
+    }
+  }
+}
+
+/* ===== Nav ===== */
 .nav-section {
-  width: 40%;
+  flex: 0 1 25%;
 }
 
 .nav-column {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
-
   ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   ul li {
     margin-bottom: 12px;
-  }
 
-  ul li a {
-    color: var(--section-color-white);
+    a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover,
+      &:focus-visible {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
+/* ===== Contact ===== */
 .contact-section {
-  width: 30%;
+  flex: 0 1 27%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 7px;
 }
 
 .contact-text {
   padding: 12px;
 
   .btn-footer {
-    background-color: var(--section-color-white);
-    margin-bottom: 10px;
-  }
-
-  .btn-footer a {
+    background-color: #fff;
     color: var(--color-botton-form);
     font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:focus-visible {
+      outline: 3px solid rgba(255, 255, 255, 0.6);
+      outline-offset: 2px;
+    }
   }
 }
 
+/* ===== Responsive ===== */
 @media (max-width: 900px) {
   .footer-container {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .contact-section {
-    width: 70%;
-  }
-
-  .contact-text {
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .social-media-section .social-media img {
-    margin-bottom: 20px;
+  .social-media-section {
+    align-items: center;
+    flex: 0 0 auto;
   }
-}
 
-@media (max-width: 768px) {
-  .contact-text p {
-    font-size: 0.9rem;
+  .social-media {
+    justify-content: center;
   }
 
   .nav-section {
-    width: 50%;
+    flex: 0 0 auto;
   }
 
-  .nav-column {
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 620px) {
-  .nav-section {
-    width: 65%;
-  }
-
-  .nav-column ul li {
-    font-size: 0.96rem;
-  }
-}
-
-@media (max-width: 430px) {
-  .nav-column ul li {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 414px) {
   .contact-section {
-    width: 100%;
+    align-items: center;
+    flex: 0 0 auto;
   }
 }
 
-@media (max-width: 360px) {
-  .nav-section {
-    width: 100%;
+@media (max-width: 468px) {
+  .footer-container {
+    padding: 32px 0;
+  }
+
+  .social-media a {
+    width: 40px;
+    height: 40px;
+
+    app-social-icon {
+      width: 18px;
+      height: 18px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
   }
 }
