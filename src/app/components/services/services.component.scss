@@ -59,6 +59,17 @@ h2 {
   }
 }
 
+.service-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  .thumbnail {
+    width: 168px;
+  }
+}
+
 .thumbnail {
   width: 168px;
   cursor: pointer;

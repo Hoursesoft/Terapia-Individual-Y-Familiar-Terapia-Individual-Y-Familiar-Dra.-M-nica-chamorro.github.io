@@ -7,13 +7,17 @@
         @for (service of services; track service.id) {
           <div class="service-item">
             <div class="service-column">
-              @if (service.hasGallery) {
-                <img
-                  [src]="service.thumbnail || service.image"
-                  [alt]="service.alt"
-                  class="thumbnail"
-                  (click)="openGallery(service.image, service.title, service.description)"
-                />
+              @if (service.hasGallery && service.thumbnails?.length) {
+                <div class="service-gallery">
+                  @for (thumb of service.thumbnails; track thumb) {
+                    <img
+                      [src]="thumb"
+                      [alt]="service.alt"
+                      class="thumbnail"
+                      (click)="openGallery(service.image, service.title, service.description)"
+                    />
+                  }
+                </div>
               } @else {
                 <img [src]="service.image" [alt]="service.alt" />
               }

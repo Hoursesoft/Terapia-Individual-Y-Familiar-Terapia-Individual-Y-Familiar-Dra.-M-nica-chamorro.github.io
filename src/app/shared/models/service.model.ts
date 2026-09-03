@@ -3,8 +3,9 @@ export interface Service {
   title: string;
   description: string;
   image: string;
-  thumbnail?: string;
   alt: string;
+  /** Thumbnails displayed in the service card; clicking opens the lightbox gallery */
+  thumbnails?: string[];
   hasGallery?: boolean;
 }
 

@@ -37,7 +37,7 @@ export const SERVICES: Service[] = [
     description:
       'Servicio de psicoterapia individual en modalidad presencial o virtual, para ajustarnos a tu necesidad; con énfasis en la atención de trastornos depresivos, ansiedad, trastornos adaptativos, elaboración de duelo, fortalecimiento del nivel de autoestima, herramientas para la vida social, familiar y laboral, etc. Un espacio donde encontrarás el apoyo emocional y las herramientas para superar situaciones, fortalecer tus herramientas de afrontamiento y armonizar cada área de tu vida, sanando y replanteando, de acuerdo a tus objetivos y tú situación individual.',
     image: 'imagens/at-individual.jpeg',
-    thumbnail: 'imagens/individual 1.jpg',
+    thumbnails: ['imagens/individual 1.jpg', 'imagens/individual 2.jpg'],
     alt: 'Terapia individual',
     hasGallery: true,
   },
