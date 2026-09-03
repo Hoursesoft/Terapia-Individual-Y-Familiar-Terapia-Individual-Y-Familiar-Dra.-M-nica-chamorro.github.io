@@ -1,0 +1,41 @@
+<footer>
+  <div class="container">
+    <div class="footer-container">
+      <div class="social-media-section">
+        <div class="text">Terapia Individual Y <span>Familiar / Dra. Mónica Chamorro</span></div>
+        <div class="social-media">
+          @for (link of socialLinks; track link.platform) {
+            <a
+              [href]="link.url"
+              [attr.aria-label]="link.platform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img [src]="link.icon" [alt]="link.alt" />
+            </a>
+          }
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-column">
+          <ul>
+            @for (item of navItems; track item.href) {
+              <li>
+                <a [href]="item.href">{{ item.label }}</a>
+              </li>
+            }
+          </ul>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <div class="contact-text">
+          <button class="btn btn-footer">
+            <a [href]="whatsappUrl">Reserva tu cita</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
