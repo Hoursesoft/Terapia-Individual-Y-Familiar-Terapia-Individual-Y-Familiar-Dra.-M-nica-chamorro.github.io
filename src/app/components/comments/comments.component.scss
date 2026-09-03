@@ -1,0 +1,26 @@
+:host {
+  display: block;
+}
+
+section {
+  text-align: center;
+  background-color: var(--section-color-white);
+  color: var(--colors-paragraph);
+}
+
+.instructions-container {
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: justify;
+  background-color: var(--section-color-white);
+  color: var(--colors-paragraph);
+}
+
+.instructions-title {
+  text-align: center;
+}
+
+#comments-section {
+  padding: 20px;
+}
