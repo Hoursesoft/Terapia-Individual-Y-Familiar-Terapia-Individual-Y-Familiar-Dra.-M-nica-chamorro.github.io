@@ -2,37 +2,25 @@
   <div class="instructions-container">
     <h2 class="instructions-title">No olvides dejar tu comentario.</h2>
     <p>
-      Recuerda que para comentar en nuestra página, debes iniciar sesión con tu cuenta de Facebook,
-      ya que utilizamos el plugin (Herramienta creada por tal empresa) de comentarios de Facebook.
+      ¡Nos encantaría conocer tu opinión! para comentar en nuestra página, inicia sesión con tu
+      cuenta de GitHub en el panel de comentarios de abajo y comparte tu experiencia.
     </p>
     <p>Indicaciones de como hacerlo:</p>
     <p>
-      1. Encuentra la sección de comentarios: Desplázate hacia abajo hasta encontrar la sección de
-      comentarios de la página, haz el comentario, encontrarás un botón que dice "Iniciar sesión".
+      1. Encuentra la sección de comentarios: Desplázate hacia abajo hasta la sección de
+      comentarios, escribe tu mensaje en el recuadro "Leave a comment".
     </p>
     <p>
-      <strong>2. Inicias tu sesión de facebook:</strong> Tu cuenta estará a salvo, la sección de
-      comentarios es un plugin propio de facebook.
+      <strong>2. Inicia sesión con GitHub:</strong> Si aún no has iniciado sesión, haz clic en "Sign
+      in to GitHub" para autenticarte. Tu cuenta estará a salvo.
     </p>
     <p>
-      3. Publica tu comentario: Una vez que hayas iniciado sesión, se habilitará el botón
-      "Publicar", haz clic en el botón de "Publicar" o "Comment" para enviar tu comentario.
-    </p>
-    <h2>NOTA:</h2>
-    <p>
-      Si la pagina te redirecciona a una nueva pestaña para iniciar sesion, y la sesion ya esta
-      iniciada, vuelve a la pagina de Terapia Individual y Familiar, recargala o refresca la pagina
-      y te habilitar el boton publicar.
+      3. Publica tu comentario: Una vez autenticado, haz clic en el botón "Comment" para enviar tu
+      comentario.
     </p>
   </div>
 
   <div id="comments-section">
-    <div id="fb-root"></div>
-    <div
-      class="fb-comments"
-      [attr.data-href]="commentsHref"
-      data-width="50"
-      data-numposts="5"
-    ></div>
+    <div id="giscus"></div>
   </div>
 </section>

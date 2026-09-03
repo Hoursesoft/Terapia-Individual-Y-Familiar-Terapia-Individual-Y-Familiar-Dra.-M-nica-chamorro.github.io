@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, ElementRef, inject } from '@angular/core';
-import { COMMENTS_HREF } from '../../shared/models/constants';
+import { GISCUS_CONFIG } from '../../shared/models/giscus.config';
 
 @Component({
   selector: 'app-comments',
@@ -8,38 +8,46 @@ import { COMMENTS_HREF } from '../../shared/models/constants';
   styleUrl: './comments.component.scss',
 })
 export class CommentsComponent implements AfterViewInit {
-  commentsHref = COMMENTS_HREF;
-  private el = inject(ElementRef);
+  private readonly el = inject(ElementRef);
 
   ngAfterViewInit(): void {
-    this.loadFacebookSDK();
+    this.loadGiscus();
   }
 
-  private loadFacebookSDK(): void {
+  private loadGiscus(): void {
     if (typeof window === 'undefined') {
       return;
     }
 
-    const win = window as unknown as {
-      FB?: { XFBML?: { parse?: (element: HTMLElement) => void } };
-      fbAsyncInit?: () => void;
-    };
-
-    if (!win.FB) {
-      win.fbAsyncInit = (): void => {
-        if (win.FB?.XFBML?.parse) {
-          win.FB.XFBML.parse(this.el.nativeElement);
-        }
-      };
-
-      const script = document.createElement('script');
-      script.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0';
-      script.async = true;
-      script.defer = true;
-      script.crossOrigin = 'anonymous';
-      document.getElementById('fb-root')?.appendChild(script);
-    } else if (win.FB?.XFBML?.parse) {
-      win.FB.XFBML.parse(this.el.nativeElement);
+    const container = this.el.nativeElement.querySelector('#giscus') as HTMLElement | null;
+    if (!container || this.isGiscusLoaded()) {
+      return;
     }
+
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    script.setAttribute('data-repo', GISCUS_CONFIG.repo);
+    script.setAttribute('data-repo-id', GISCUS_CONFIG.repoId);
+    script.setAttribute('data-category', GISCUS_CONFIG.category);
+    script.setAttribute('data-category-id', GISCUS_CONFIG.categoryId);
+    script.setAttribute('data-mapping', GISCUS_CONFIG.mapping);
+    script.setAttribute('data-strict', '0');
+    script.setAttribute('data-reactions-enabled', '1');
+    script.setAttribute('data-emit-metadata', '0');
+    script.setAttribute('data-input-position', 'top');
+    script.setAttribute('data-theme', GISCUS_CONFIG.theme);
+    script.setAttribute('data-lang', GISCUS_CONFIG.lang);
+    script.setAttribute('data-loading', 'lazy');
+
+    container.appendChild(script);
+  }
+
+  private isGiscusLoaded(): boolean {
+    const existing = this.el.nativeElement.querySelector(
+      'script[src="https://giscus.app/client.js"]',
+    );
+    return existing != null;
   }
 }

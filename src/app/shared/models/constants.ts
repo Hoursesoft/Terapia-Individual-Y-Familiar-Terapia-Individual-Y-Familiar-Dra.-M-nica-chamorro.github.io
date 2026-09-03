@@ -115,6 +115,3 @@ export const FOOTER_NAV_ITEMS: NavItem[] = [
 
 export const GOOGLE_MAPS_EMBED_URL =
   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.87734172214635!2d-76.49570803254088!3d3.578864650010004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30aba369715ebb%3A0xe5a1b669cad26bfe!2sBaltopuente%20Torre%20Residencial!5e0!3m2!1ses-419!2sco!4v1722737993968!5m2!1ses-419!2sco';
-
-export const COMMENTS_HREF =
-  'https://hoursesoft.github.io/Terapia-Individual-Y-Familiar-Terapia-Individual-Y-Familiar-Dra.-M-nica-chamorro.github.io/';
