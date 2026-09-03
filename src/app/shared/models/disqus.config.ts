@@ -21,6 +21,5 @@ export interface DisqusConfig {
 }
 
 export const DISQUS_CONFIG: DisqusConfig = {
-  // TODO: reemplazar con el shortname real de tu sitio en disqus.com
-  shortname: 'SITE-SHORTNAME',
+  shortname: 'terapia-individual-y-familiar',
 };
