@@ -18,35 +18,6 @@
 
 ---
 
-## Estructura del proyecto
-
-```
-src/
-├── app/
-│   ├── components/            # Componentes standalone
-│   │   ├── header/            # Navegación de escritorio y menú móvil
-│   │   ├── welcome/           # Hero y llamada a la acción
-│   │   ├── about/             # Presentación profesional
-│   │   ├── services/          # Catálogo de servicios + galería (lightbox)
-│   │   ├── benefits/          # Ventajas del servicio
-│   │   ├── contact/           # Formulario de contacto + Google Maps
-│   │   ├── comments/          # Panel de comentarios Disqus
-│   │   ├── social-icons/      # Iconos de redes sociales (SVG inline)
-│   │   └── footer/            # Pie de página, navegación y redes
-│   ├── shared/
-│   │   ├── models/            # Modelos tipados y constantes de contenido
-│   │   └── (directives, guards, pipes, services)
-│   ├── environments/          # Configuración por entorno
-│   └── app.ts                 # Componente raíz
-├── index.html
-public/                        # Assets estáticos copiados al build
-└── imagens/                   # Recursos gráficos del sitio
-```
-
-> Nota: `src/assets/` no se utiliza; los recursos se sirven desde `public/imagens/`.
-
----
-
 ## Comandos de desarrollo
 
 | Comando               | Descripción                                        |
